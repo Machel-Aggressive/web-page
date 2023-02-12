@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .img-list {
+            position: relative;
+        }
+        .img-list li {
+            position: absolute;
+        }
+        .pointer {
+            position: absolute;
+            z-index: 999;
+            top: 270px;
+        }
+        .pointer a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, .6);
+            border: 2px solid transparent;
+            border-radius: 50%;
+            float: left;
+            margin-left: 20px;
+        }
+        .pointer a.active {
+            background-color: #fff;
+            border: 2px solid rgba(255, 0, 0, 0.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="#"><img src="./img/e-card.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/jiadian.jpg.webp" alt=""></a></li>
+        <li><a href="#"><img src="./img/yingyin.jpg.webp" alt=""></a></li>
+        <div class="pointer">
+            <a href="#" class="active"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </ul>
+</body>
+</html>
